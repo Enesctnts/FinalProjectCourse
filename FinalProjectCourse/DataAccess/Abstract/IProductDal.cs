@@ -5,12 +5,8 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface IProductDal
+    public interface IProductDal : IEntityRepository<Product>
     {
-        List<Product> GetALL();
-        void Add(Product product);
-        void Delete(Product product);
-        void Update(Product product);
-        List<Product> GetByAllCategory(int categoryId);
+        
     }
 }
