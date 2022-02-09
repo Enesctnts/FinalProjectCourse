@@ -1,7 +1,9 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
@@ -11,37 +13,50 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public void Add(Customer entity)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var addedEntity = context.Entry(entity);
+                addedEntity.State = EntityState.Added;
+                context.SaveChanges();
+            }
         }
 
         public void Delete(Customer entity)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var deleteEntity = context.Entry(entity);
+                deleteEntity.State = EntityState.Deleted;
+                context.SaveChanges();
+            }
+            
         }
 
-        public List<Customer> GetALL()
+        public Customer Get(Expression<Func<Customer, bool>> filter)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                return context.Set<Customer>().SingleOrDefault(filter);
+            }
         }
 
         public List<Customer> GetALL(Expression<Func<Customer, bool>> filter = null)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                return filter == null ? context.Set<Customer>().ToList() : context.Set<Customer>().Where(filter).ToList(); 
+            }
         }
 
-        public List<Customer> GetByAllCategory(int categoryId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Customer> GetByAllCategory(Expression<Func<Customer, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public void Update(Customer entity)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var updateEntity = context.Entry(entity);
+                updateEntity.State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

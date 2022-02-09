@@ -13,7 +13,7 @@ namespace ConsoleUI
 
             foreach (var product in productManager.GetByUnitPrice(40,100))
             {
-                Console.WriteLine(product.ProductName +" " + product.UnitPrice);
+                Console.WriteLine(product.ProductName);
             }
 
             Console.ReadLine();
