@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FinalProjectCourse",
+    "\\FinalProjectCourse\\ConsoleUI",
+    "\\FinalProjectCourse\\DataAccess",
+    "\\FinalProjectCourse\\DataAccess\\Concrete",
+    "\\FinalProjectCourse\\DataAccess\\Concrete\\EntityFramework"
   ],
-  "SelectedNode": "\\FinalProjectCourse.sln",
+  "SelectedNode": "\\FinalProjectCourse\\DataAccess\\Concrete\\EntityFramework\\EfProductDal.cs",
   "PreviewInSolutionExplorer": false
 }
