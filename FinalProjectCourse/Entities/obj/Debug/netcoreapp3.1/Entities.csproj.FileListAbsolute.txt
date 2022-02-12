@@ -8,3 +8,6 @@ C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\obj\
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CopyComplete

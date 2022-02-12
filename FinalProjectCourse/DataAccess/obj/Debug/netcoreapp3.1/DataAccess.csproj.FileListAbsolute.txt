@@ -11,3 +11,5 @@ C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\ob
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csproj.CopyComplete
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
 C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\hp\Documents\GitHub\FinalProjectCourse\FinalProjectCourse\DataAccess\bin\Debug\netcoreapp3.1\Core.pdb
