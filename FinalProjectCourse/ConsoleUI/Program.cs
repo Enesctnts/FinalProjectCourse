@@ -9,7 +9,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //ProductTest();
+            ProductTest();
             //CategoryTest();
 
             Console.ReadLine();
@@ -28,20 +28,29 @@ namespace ConsoleUI
         private static void ProductTest()
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
-            Console.WriteLine("***Ürün Adı***" + "\t\t\t\t***Ürün Kategorisi***\n");
-            
-            foreach (var product in productManager.GetProductDetails())
+            var result = productManager.GetProductDetails();
+            if (result.Success)
             {
-                var result = product.ProductName.Length;
-                Console.Write(product.ProductName);
+                Console.WriteLine("***Ürün Adı***" + "\t\t\t\t***Ürün Kategorisi***\n");
 
-                for (int i = 0; i < (40-result); i++)
+                foreach (var product in productManager.GetProductDetails().Data)
                 {
-                    Console.Write(" ");
-                    
+                    var result1 = product.ProductName.Length;
+                    Console.Write(product.ProductName);
+
+                    for (int i = 0; i < (40 - result1); i++)
+                    {
+                        Console.Write(" ");
+
+                    }
+                    Console.WriteLine(product.CategoryName);
                 }
-                Console.WriteLine(product.CategoryName);
             }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
+            
 
         }
     }
