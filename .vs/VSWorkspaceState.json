@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\FinalProjectCourse",
-    "\\FinalProjectCourse\\DataAccess",
-    "\\FinalProjectCourse\\DataAccess\\Abstract"
+    ""
   ],
-  "SelectedNode": "\\FinalProjectCourse\\DataAccess\\Abstract\\IProductDal.cs",
+  "SelectedNode": "\\FinalProjectCourse.sln",
   "PreviewInSolutionExplorer": false
 }
